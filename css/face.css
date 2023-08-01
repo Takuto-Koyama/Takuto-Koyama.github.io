@@ -39,7 +39,7 @@
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);			/*同上*/
 }
 /*３枚画像の共通設定*/
-#slide1,#slide2,#slide3 {
+#face {
 	-webkit-animation-duration: 12s;	/*実行する時間。「s」は秒の事。*/
 	animation-duration: 12s;			/*同上*/
 	-webkit-animation-iteration-count:infinite;	/*実行する回数。「infinite」は無限に繰り返す意味。*/
@@ -49,21 +49,10 @@
 	animation-fill-mode: both;
 }
 /*土台画像*/
-#slide0 {
+#face {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  180px;       /* ※縦横を同値に */
+    height: 180px;       /* ※縦横を同値に */
 	position: relative;width: 100%;height: auto;
 }
-/*１枚目*/
-#slide1 {
-	-webkit-animation-name: slide1;	/*上で設定しているキーフレーム（keyframes）の名前*/
-	animation-name: slide1;			/*同上*/
-}
-/*２枚目*/
-#slide2 {
-	-webkit-animation-name: slide2;	/*上で設定しているキーフレーム（keyframes）の名前*/
-	animation-name: slide2;			/*同上*/
-}
-/*３枚目*/
-#slide3 {
-	-webkit-animation-name: slide3;	/*上で設定しているキーフレーム（keyframes）の名前*/
-	animation-name: slide3;			/*同上*/
-}
+

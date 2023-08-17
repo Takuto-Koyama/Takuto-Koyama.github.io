@@ -78,7 +78,7 @@ img {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
+  background-color: #333;
   box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
 }
 
@@ -101,6 +101,11 @@ img {
   color: #333;
 }
 
+.header-img {
+  width: 300px;
+  height: auto;
+}
+
 .gnav-list {
   display: flex;
   justify-content: space-between;
@@ -113,13 +118,13 @@ img {
 
 .gnav-item a {
   position: relative;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
   display: inline-block;
   padding: 5px 0;
   transition: .3s;
   letter-spacing: .05em;
-  color: #333;
+  color: #fff;
 }
 .gnav-item a:after {
   position: absolute;
@@ -266,6 +271,19 @@ img {
 
 .profile-body p:not(:last-child) {
   margin-bottom: 30px;
+}
+
+/*--------------------------------
+ Biography
+---------------------------------*/
+.biography {
+  flex-wrap: wrap;
+  max-width: 800px;
+  color: #333;
+}
+
+.biography-body {
+  font-size: 16px;
 }
 
 /*--------------------------------

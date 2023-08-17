@@ -136,7 +136,7 @@ img {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: #fff;
 }
 
 .gnav-item a:hover:after {

@@ -163,14 +163,14 @@ img {
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 5px;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
 }
 .mv-subtitle {
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
-  letter-spacing: .08em;
+  letter-spacing: .05em;
 }
 
 .mv-text {

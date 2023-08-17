@@ -276,14 +276,10 @@ img {
 /*--------------------------------
  Biography
 ---------------------------------*/
-.biography {
-  flex-wrap: wrap;
-  max-width: 800px;
-  color: #333;
-}
 
-.biography-body {
+.biography-list {
   font-size: 16px;
+  margin: 0;
 }
 
 /*--------------------------------

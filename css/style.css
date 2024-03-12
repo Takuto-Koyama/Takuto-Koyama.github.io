@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 15px;
   letter-spacing: .05em;
   color: #333;
@@ -79,7 +79,7 @@ img {
   z-index: 1;
   width: 100%;
   background-color: #333;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .1);
 }
 
 .header .container {
@@ -126,6 +126,7 @@ img {
   letter-spacing: .05em;
   color: #fff;
 }
+
 .gnav-item a:after {
   position: absolute;
   bottom: 0;
@@ -165,6 +166,7 @@ img {
   margin-bottom: 5px;
   letter-spacing: .05em;
 }
+
 .mv-subtitle {
   font-size: 20px;
   font-weight: bold;
@@ -198,9 +200,11 @@ img {
 
 .work-item {
   margin-bottom: 8px;
+  color: #333;
+  text-decoration: none;
 }
 
-.work-name{
+.work-name {
   letter-spacing: .05em;
 }
 
@@ -250,16 +254,19 @@ img {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .profile-img {
   width: 20%;
   margin-right: 30px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .profile-img img {
   border-radius: 50%;
   overflow: hidden;
 }
+
 .profile-body {
   flex: 1;
 }
@@ -296,6 +303,7 @@ img {
 .contact-text {
   margin-top: 10px;
 }
+
 /*--------------------------------
  ページトップ
 ---------------------------------*/
@@ -462,6 +470,7 @@ img {
   .mv-title {
     font-size: 30px;
   }
+
   .mv-subtitle {
     font-size: 16px;
     margin-bottom: 20px;
@@ -519,6 +528,7 @@ img {
   .profile {
     display: block;
   }
+
   .profile-img {
     width: 150px;
     margin: 0 auto;

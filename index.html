@@ -100,7 +100,7 @@
       <section class="works section" id="works">
         <div class="container">
           <h2 class="title">RECENT WORKS</h2>
-          <h3 class="works-type">ARTICLE</h3>
+          <h3 class="works-type">ARTICLES</h3>
           <div class="works-list" id="article-list">
 
             <a class="work-item" href="https://doi.org/10.1101/2024.02.13.580100">
@@ -130,7 +130,7 @@
 
           </div>
 
-          <h3 class="works-type">PRESENTATION</h3>
+          <h3 class="works-type">PRESENTATIONS</h3>
           <div class="works-list" id="presentation-list">
 
             <a class="work-item" href="https://aeplan.jp/pssj2024/">
@@ -172,7 +172,7 @@
             </a>
           </div>
 
-          <h3 class="works-type">AWARD</h3>
+          <h3 class="works-type">AWARDS</h3>
           <div class="works-list" id="award-list">
 
             <a class="work-item" href="https://aeplan.jp/pssj2024/">
@@ -181,12 +181,32 @@
 
           </div>
 
-          <h3 class="works-type">WRITING</h3>
+          <h3 class="works-type">WRITINGS</h3>
           <div class="works-list" id="writing-list">
 
             <a class="work-item" href="https://www.kagakudojin.co.jp/book/b641205.html">
               <p class="work-name">小山 拓豊, 奥野 恭史, 「6章 AIビックデータと創薬」化学における情報・AIの活用 (CSJカレントレビュー: 50)</p>
             </a>
+
+          </div>
+
+          <h3 class="works-type">SCHOLARSHIPS</h3>
+          <div class="works-list" id="scholarship-list">
+
+            <a class="work-item">
+              <p class="work-name">2020~2022年 東京薬事協会 奨学生</p>
+            </a>
+
+            <a class="work-item">
+              <p class="work-name">2022年~2024年 公益財団法人 尚志社 奨学生</p>
+            </a>
+
+            <a class="work-item">
+              <p class="work-name">2022年~2024年 日本学生支援機構 貸与奨学金 全額返還免除</p>
+            </a>
+
+            <a class="work-item">
+              <p class="work-name">2024年~2027年 日本学術振興会特別研究員 (DC1)</p>
 
           </div>
 
@@ -295,6 +315,12 @@
       writingList.forEach((item, index) => {
         item.innerHTML = `[${index + 1}] ` + item.innerHTML;
       });
+
+      const scholarshipList = document.querySelectorAll('#scholarship-list .work-item .work-name');
+      scholarshipList.forEach((item, index) => {
+        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+      });
+
     });
   </script>
 

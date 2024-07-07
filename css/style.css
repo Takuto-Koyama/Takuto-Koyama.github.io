@@ -195,7 +195,7 @@ img {
 }
 
 .works-list {
-  display: flex;
+  display: block;
   font-size: 16px;
   flex-wrap: wrap;
   margin-left: 30px;

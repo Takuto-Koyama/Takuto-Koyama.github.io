@@ -83,12 +83,11 @@ img {
 }
 
 .header .language-switcher {
-  position: relative;
-  top: 50%;   /* ヘッダー内での縦位置 */
-  right: 20px; /* ヘッダー内での横位置 */
+  /* position: relative; はそのままでよいが、topは不要 */
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
+  /* 余計な位置オフセットを削除する */
 }
 
 .header .language-switcher a {

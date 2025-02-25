@@ -82,6 +82,26 @@ img {
   box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .1);
 }
 
+.header .language-switcher {
+  position: absolute;
+  top: 20px;   /* ヘッダー内での縦位置 */
+  right: 20px; /* ヘッダー内での横位置 */
+  font-size: 14px;
+  color: #fff;
+}
+
+.header .language-switcher a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: opacity 0.3s;
+}
+
+.header .language-switcher a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
 .header .container {
   display: flex;
   align-items: center;

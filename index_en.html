@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<div class="language-switcher" style="position: fixed; top: 10px; right: 10px;">
+  <a href="index.html">Japanese</a> | <a href="index_en.html">English</a>
+</div>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>小山拓豊</title>
-  <meta property='og:type' content='website'>
-  <meta property='og:title' content='小山拓豊'>
-  <meta property='og:url' content='https://takuto-koyama.github.io/'>
-  <meta property='og:description' content='小山拓豊のポートフォリオサイトです'>
+  <!-- Title -->
+  <title>Takuto Koyama Portfolio</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Takuto Koyama">
+  <meta property="og:url" content="https://takuto-koyama.github.io/">
+  <meta property="og:description" content="This is the portfolio website of Takuto Koyama">
   <!-- meta property="og:image" content="img/ogp.png"-->
-  <meta name="description" content="小山拓豊のポートフォリオサイトです" />
-  <title>TAKUTO KOYAMA ポートフォリオ</title>
+  <meta name="description" content="This is the portfolio website of Takuto Koyama" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
-  <link rel=”canonical” href=”URLが入る” />
+  <link rel="canonical" href="URL goes here" />
 </head>
 
 <body>
@@ -27,7 +32,7 @@
     <header class="header">
       <div class="container">
         <h1 class="header-logo">
-          <a href=https://clinfo.med.kyoto-u.ac.jp class="header-img"><img src="img/logo.png" alt=""></a>
+          <a href="https://clinfo.med.kyoto-u.ac.jp" class="header-img"><img src="img/logo.png" alt=""></a>
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
@@ -50,8 +55,8 @@
           <p class="mv-title">TAKUTO KOYAMA</p>
           <p class="mv-subtitle">PORTFOLIO</p>
           <p class="mv-text">
-            ケモインフォマティクスを利用したAI創薬の研究、<br>
-            特に現在はインシリコ・スクリーニングに関する研究を行っています。<br>
+            Research on AI drug discovery utilizing chemoinformatics, <br>
+            with a particular focus on in silico screening. <br>
           </p>
         </div>
       </div>
@@ -67,9 +72,9 @@
             </p>
             <div class="profile-body">
               <p>
-                私は現在、京都大学医学研究科の修士課程にてAI創薬の研究に取り組んでいます。<br>
-                学部時代は薬学部にて創薬に関する知識を学び、その中で現状の創薬プロセスが抱えるコスト面での大きな課題について学び、それらの課題を解決する新たなアプローチとしてAI創薬の存在を知りました。<br>
-                大学院での研究活動を通じてAI創薬を実現するための技術を学び、AI創薬の研究開発に貢献したいと考えています。<br>
+                I am currently engaged in AI drug discovery research as a doctoral candidate at the Graduate School of Medicine, Kyoto University.<br>
+                During my undergraduate studies in the Faculty of Pharmacy, I acquired knowledge on drug discovery and recognized the significant cost-related challenges inherent in conventional drug development processes, which led me to discover AI-driven drug discovery as a novel approach.<br>
+                Through my graduate research, I aim to master the techniques necessary for realizing AI drug discovery and contribute to its development. <br>
               </p>
             </div>
           </div>
@@ -83,11 +88,12 @@
           <h2 class="title">BIOGRAPHY</h2>
           <div class="biography">
             <p class="biography-list">
-            2018年: 東京大学理科一類入学<br>
-            2020年: 東京大学薬学部進学<br>
-            2022年: 東京大学薬学部薬科学科卒業<br>
-            2022年: 京都大学医学研究科人間健康科学系専攻修士課程進学<br>
-            2024年〜2027年: 日本学術振興会特別研究員DC1（採用内定）<br>
+              2018: Admitted to the University of Tokyo (Science Category I)<br>
+              2020: Entered the Faculty of Pharmacy, University of Tokyo<br>
+              2022: Graduated from the Department of Pharmaceutical Sciences, University of Tokyo<br>
+              2024: Completed the Master's Program in Human Health Sciences, Graduate School of Medicine, Kyoto University<br>
+              2024: Enrolled in the Doctoral Program in Human Health Sciences, Graduate School of Medicine, Kyoto University<br>
+              2024–2027: JSPS Research Fellowship for Young Scientists (DC1)<br>
             </p>
           </div>
         </div>
@@ -98,56 +104,144 @@
       <section class="works section" id="works">
         <div class="container">
           <h2 class="title">RECENT WORKS</h2>
-          <h3 class="works-type">ARTICLE</h3>
-          <div class="works-list">
+          <h3 class="works-type">ARTICLES</h3>
+          <div class="works-list" id="article-list">
 
             <a class="work-item" href="https://doi.org/10.1101/2024.02.13.580100">
-              <p class="work-name">[1] Takuto Koyama, Hayato Tsumura, Shigeyuki Matsumoto, Ryunosuke Okita, Ryosuke Kojima, and Yasushi Okuno. (2024). ChemGLaM: Chemical-Genomics Language Models for Compound-Protein Interaction Prediction. <i>bioRxiv</i>. [PREPRINT]</p>
+              <p class="work-name">Takuto Koyama, Hayato Tsumura, Shigeyuki Matsumoto, Ryunosuke Okita, Ryosuke Kojima, and Yasushi Okuno. (2024). ChemGLaM: Chemical-Genomics Language Models for Compound-Protein Interaction Prediction. <i>bioRxiv</i>. [PREPRINT]</p>
+            </a>
+
+            <a class="work-item" href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-025-00967-9">
+              <p class="work-name">Romeo Cozac, Haris Hasic, Jun Jin Choong, Vincent Richard, Loic Beheshti, Cyrille Froehlich, Takuto Koyama, Shigeyuki Matsumoto, Ryunosuke Kojima, Hiroaki Iwata, Aki Hasegawa, Takao Otsuka, and Yasushi Okuno. (2025). kMoL: an open-source machine and federated learning library for drug discovery. <i>J. Cheminform.</i> [ARTICLE]</p>
+            </a>
+
+            <a class="work-item" href="https://www.nature.com/articles/s41419-024-07199-z">
+              <p class="work-name">Yusuke Toda, Hiroaki Fujita, Koshiki Mino, Takuto Koyama, Seiji Matsuoka, Toshie Kaizuka, Mari Agawa, Shigeyuki Matsumoto, Akiko Idei, Momoko Nishikori, Yasushi Okuno, Hiroyuki Osada, Minoru Yoshida, Akifumi Takaori-Kondo, and Kazuhiro Iwai (2024). Synergistic involvement of the NZF domains of the LUBAC accessory subunits HOIL-1L and SHARPIN in the regulation of LUBAC function. <i>Cell Death & Disease</i>. [ARTICLE]</p>
             </a>
 
             <a class="work-item" href="https://doi.org/10.1016/j.ijpharm.2024.123873">
-              <p class="work-name">[2] Hiroaki Iwata, Yoshihiro Hayashi, Takuto Koyama, Aki Hasegawa, Kosuke Ohgi, Ippei Kobayashi, and Yasushi Okuno. (2024). Feature extraction of particle morphologies of pharmaceutical excipients from scanning electron microscope images using convolutional neural networks. <i>Int. J. Pharm</i>. [ARTICLE]</p>
+              <p class="work-name">Hiroaki Iwata, Yoshihiro Hayashi, Takuto Koyama, Aki Hasegawa, Kosuke Ohgi, Ippei Kobayashi, and Yasushi Okuno. (2024). Feature extraction of particle morphologies of pharmaceutical excipients from scanning electron microscope images using convolutional neural networks. <i>Int. J. Pharm</i>. [ARTICLE]</p>
             </a>
 
             <a class="work-item" href="https://doi.org/10.1021/acs.jcim.3c01220">
-              <p class="work-name">[3] Hiroaki Iwata, Taichi Nakai, Takuto Koyama, Shigeyuki Matsumoto, Ryosuke Kojima, and Yasushi Okuno. (2023). VGAE-MCTS: a New Molecular Generative Model combining Variational Graph Auto-Encoder and Monte Carlo Tree Search. <i>J. Chem. Inf. Model.</i>. [ARTICLE]</p>
+              <p class="work-name">Hiroaki Iwata, Taichi Nakai, Takuto Koyama, Shigeyuki Matsumoto, Ryosuke Kojima, and Yasushi Okuno. (2023). VGAE-MCTS: a New Molecular Generative Model combining Variational Graph Auto-Encoder and Monte Carlo Tree Search. <i>J. Chem. Inf. Model.</i> [ARTICLE]</p>
             </a>
-    
+
             <a class="work-item" href="https://pubs.acs.org/doi/10.1021/acs.jcim.3c00269">
-              <p class="work-name">[4] Takuto Koyama, Shigeyuki Matsumoto, Hiroaki Iwata, Ryosuke Kojima, and Yasushi Okuno. (2023). Improving Compound–Protein Interaction Prediction by Self-Training with Augmenting Negative Samples. <i>J. Chem. Inf. Model.</i>. [ARTICLE]</p>
+              <p class="work-name">Takuto Koyama, Shigeyuki Matsumoto, Hiroaki Iwata, Ryosuke Kojima, and Yasushi Okuno. (2023). Improving Compound–Protein Interaction Prediction by Self-Training with Augmenting Negative Samples. <i>J. Chem. Inf. Model.</i> [ARTICLE]</p>
             </a>
 
           </div>
 
-          <h3 class="works-type">PRESENTATION</h3>
-          <div class="works-list">
+          <h3 class="works-type">PRESENTATIONS</h3>
+          <div class="works-list" id="presentation-list">
 
-            <a class="work-item" href="https://cbi-society.jp/annual-meetings/2023/">
-              <p class="work-name">[1] 小山 拓豊, 岩田 浩明, 松本 篤幸, 小島 諒介, 大塚 教雄, 長谷川 亜樹, 奥野 恭史.「Insight into Federated Learning for Compound-Protein Interaction Prediction」, 『情報計算科学生物学会（CBI学会）2023年大会』,東京,10月, 2023年. [ORAL]</p>
+            <a class="work-item" href="https://sites.google.com/view/chemoinfo2024/">
+              <p class="work-name">Takuto Koyama, Hayato Tsumura, Ryunosuke Okita, Kimiya Yamazaki, Takashi Kawahigashi, Aki Hasegawa, Hiroaki Iwata, Ryosuke Kojima, Atsuyuki Matsumoto, and Yasushi Okuno.<br>
+                “Large-scale Prediction of Compound-Protein Interactions Using a Chemical-Genomics Language Model”,<br>
+                47th Chemoinformatics Symposium, Kanazawa, December 2024. [ORAL]
+              </p>
+            </a>
+
+            <a class="work-item" href="https://www.iscb.org/ismb2024">
+              <p class="work-name">Takuto Koyama, Hayato Tsumura, Ryunosuke Okita, Ryosuke Kojima, Shigeyuki Matsumoto, Yasushi Okuno.<br>
+                ChemGLaM: Chemical Genomics Language Models for Compound-Protein Interaction Prediction,<br>
+                ISMB 2024 MLCSB, Montreal, Canada, July 2024. [POSTER]
+              </p>
+            </a>
+
+            <a class="work-item" href="https://aeplan.jp/pssj2024/">
+              <p class="work-name">Takuto Koyama, Hayato Tsumura, Atsuyuki Matsumoto, Ryunosuke Okita, Ryosuke Kojima, Yasushi Okuno.<br>
+                “ChemGLaM: Compound-Protein Interaction Prediction Using Large Language Models”,<br>
+                24th Annual Meeting of the Protein Society, Sapporo, June 2024. [POSTER] Awarded Poster Prize
+              </p>
             </a>
 
             <a class="work-item" href="https://cbi-society.jp/annual-meetings/2023/">
-              <p class="work-name">[2] 伊藤 彰真, 小山 拓豊, 岩田 浩明, 松本 篤幸, 奥野 恭史. 「Exploring Chemical Structural Insights of ADME Properties via Interpretable Deep Learning」, 『情報計算科学生物学会（CBI学会）2023年大会』,東京,10月, 2023年. [POSTER]</p>
+              <p class="work-name">Takuto Koyama, Hiroaki Iwata, Atsuyuki Matsumoto, Ryosuke Kojima, Takao Otsuka, Aki Hasegawa, and Yasushi Okuno.<br>
+                “Insight into Federated Learning for Compound-Protein Interaction Prediction”,<br>
+                CBI Society 2023 Annual Meeting, Tokyo, October 2023. [ORAL]
+              </p>
             </a>
 
             <a class="work-item" href="https://cbi-society.jp/annual-meetings/2023/">
-              <p class="work-name">[3] 岩田 浩明, 中井 大智, 小山 拓豊, 松本 篤幸, 小島 諒介, 奥野 恭史. 「A New Molecular Generation Method Combining Deep Learning and Reinforcement Learning」, 『情報計算科学生物学会（CBI学会）2023年大会』,東京,10月, 2023年. [POSTER]</p>
+              <p class="work-name">Akira Ito, Takuto Koyama, Hiroaki Iwata, Atsuyuki Matsumoto, and Yasushi Okuno.<br>
+                “Exploring Chemical Structural Insights of ADME Properties via Interpretable Deep Learning”,<br>
+                CBI Society 2023 Annual Meeting, Tokyo, October 2023. [POSTER]
+              </p>
+            </a>
+
+            <a class="work-item" href="https://cbi-society.jp/annual-meetings/2023/">
+              <p class="work-name">Hiroaki Iwata, Daichi Nakai, Takuto Koyama, Atsuyuki Matsumoto, Ryosuke Kojima, and Yasushi Okuno.<br>
+                “A New Molecular Generation Method Combining Deep Learning and Reinforcement Learning”,<br>
+                CBI Society 2023 Annual Meeting, Tokyo, October 2023. [POSTER]
+              </p>
             </a>
 
             <a class="work-item" href="https://www.iscb.org/ismbeccb2023">
-              <p class="work-name">[4] Takuto Koyama, Shigeyuki Matsumoto, Hiroaki Iwata, Ryosuke Kojima,Yasushi Okuno. Iterative Data Augmentation of near boundary negative samples improves the model generalizability in Compound-Protein Interaction Prediction,<i>ISMB/ECCB 2023 MLCSB</i>, Lyon, France, Jul 2023. [POSTER]</p>
-            </a>
-
-            <a class="work-item" href="https://cbi-society.org/taikai/taikai22/index.html">
-              <p class="work-name">[5] 小山 拓豊, 松本 篤幸, 岩田 浩明, 小島 諒介, 奥野 恭史. 「Improvement of Compound-Protein Interactions Prediction with Semi-supervised Learning 」, 『情報計算科学生物学会（CBI学会）2022年大会』,東京,10月, 2022年. [POSTER]</p>
+              <p class="work-name">Takuto Koyama, Shigeyuki Matsumoto, Hiroaki Iwata, Ryosuke Kojima, Yasushi Okuno.<br>
+                Iterative Data Augmentation of Near-Boundary Negative Samples Improves the Model Generalizability in Compound-Protein Interaction Prediction,<br>
+                ISMB/ECCB 2023 MLCSB, Lyon, France, July 2023. [POSTER]
+              </p>
             </a>
 
             <a class="work-item" href="https://www.apstj.jp/event/annual-mtg/mtg-38th/">
-              <p class="work-name">[6] 岩田 浩明, 林 祥弘, 小山 拓豊, 長谷川 亜樹, 寺山 慧, 奥野 恭史 「Clustering of Pharmaceutical Excipients Using Pretrained Convolutional Neural Networks」, 『日本薬剤学会第38年会』, 愛知, 5月, 2023年. [POSTER]</p>
+              <p class="work-name">Hiroaki Iwata, Yoshihiro Hayashi, Takuto Koyama, Aki Hasegawa, Satoshi Terayama, and Yasushi Okuno.<br>
+                “Clustering of Pharmaceutical Excipients Using Pretrained Convolutional Neural Networks”,<br>
+                38th Annual Meeting of the Japanese Pharmaceutical Association, Aichi, May 2023. [POSTER]
+              </p>
             </a>
+
+            <a class="work-item" href="https://cbi-society.org/taikai/taikai22/index.html">
+              <p class="work-name">Takuto Koyama, Atsuyuki Matsumoto, Hiroaki Iwata, Ryosuke Kojima, and Yasushi Okuno.<br>
+                “Improvement of Compound-Protein Interaction Prediction with Semi-supervised Learning”,<br>
+                CBI Society 2022 Annual Meeting, Tokyo, October 2022. [POSTER]
+              </p>
+            </a>
+
           </div>
 
+          <h3 class="works-type">AWARDS</h3>
+          <div class="works-list" id="award-list">
 
+            <a class="work-item" href="https://aeplan.jp/pssj2024/">
+              <p class="work-name">Poster Award Winner at the 24th Annual Meeting of the Protein Society</p>
+            </a>
+
+          </div>
+
+          <h3 class="works-type">WRITINGS</h3>
+          <div class="works-list" id="writing-list">
+
+            <a class="work-item" href="https://www.kagakudojin.co.jp/book/b641205.html">
+              <p class="work-name">Takuto Koyama, Yasushi Okuno,<br>
+                “Chapter 6: AI, Big Data, and Drug Discovery” in Utilization of Information and AI in Chemistry (CSJ Current Review: 50), Kagaku Dōjin
+              </p>
+            </a>
+
+            <a class="work-item" href="https://link.springer.com/chapter/10.1007/978-981-97-4828-0_1">
+              <p class="work-name">Takuto Koyama, Yasushi Okuno,<br>
+                The AI Trends in Chemical Space for Drug Discovery, Drug Development Supported by Informatics, Springer
+              </p>
+            </a>
+
+          </div>
+
+          <h3 class="works-type">SCHOLARSHIPS</h3>
+          <div class="works-list" id="scholarship-list">
+            <a class="work-item">
+              <p class="work-name">2020–2022: Tokyo Pharmaceutical Association Scholarship Recipient</p>
+            </a>
+            <a class="work-item">
+              <p class="work-name">2022–2024: Nōshisha Public Interest Incorporated Foundation Scholarship Recipient</p>
+            </a>
+            <a class="work-item">
+              <p class="work-name">2022–2024: Japan Student Services Organization – Full Loan Scholarship Exemption</p>
+            </a>
+            <a class="work-item">
+              <p class="work-name">2024–2027: JSPS Special Researcher (DC1)</p>
+            </a>
+          </div>
 
         </div>
       </section>
@@ -163,8 +257,9 @@
               <div class="skill-body">
                 <h3 class="skill-name">Python</h3>
                 <p class="skill-text">
-                  Pythonコーディングを用いた研究活動経験 </br>
-                  PytorchおよびTensorflowを用いた深層学習実装経験</p>
+                  Experience in research activities using Python coding <br>
+                  and implementation of deep learning models with PyTorch and TensorFlow.
+                </p>
               </div>
             </div>
             <div class="skill-item">
@@ -172,7 +267,8 @@
               <div class="skill-body">
                 <h3 class="skill-name">English</h3>
                 <p class="skill-text">
-                  TOEIC 905点 </p>
+                  TOEIC score: 905
+                </p>
               </div>
             </div>
             <div class="skill-item">
@@ -180,20 +276,20 @@
               <div class="skill-body">
                 <h3 class="skill-name">Statistics</h3>
                 <p class="skill-text">
-                  統計検定 1級</p>
+                  Level 1 Certification in Statistics
+                </p>
               </div>
             </div>
             <div class="skill-item">
               <p class="skill-img"><img src="img/math.png" alt=""></p>
               <div class="skill-body">
-                <h3 class="skill-name">Mathmatics</h3>
+                <h3 class="skill-name">Mathematics</h3>
                 <p class="skill-text">
-                  JDLA E資格 <br>
-                  全珠連 珠算 五段 <br>
-                  全珠連 暗算 七段
+                  JDLA E Certification <br>
+                  5th Dan in Abacus Calculation <br>
+                  7th Dan in Mental Arithmetic
                 </p>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -205,7 +301,7 @@
         <div class="container">
           <h2 class="title">CONTACT</h2>
           <p class="lead">
-            お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
+            For inquiries, please contact me via social media or email.
           </p>
           <div class="contact-list">
             <a class="contact-item" href="https://twitter.com/koyama_takuto" target="_blank" rel="noopener">Twitter</a>
@@ -224,13 +320,43 @@
     <footer class="footer">
       <div class="copyright">&copy;TAKUTO KOYAMA</div>
       <div class="img-copyright">&copy;
-        <a href="https://jp.freepik.com">SKILLに用いられているイラスト(English, Statistics, Mathmatics)の著作権はFreepikにあります</a>
+        <a href="https://jp.freepik.com">The illustrations used in the SKILL section (English, Statistics, Mathematics) are copyrighted by Freepik</a>
       </div>
     </footer>
     <!-- /footer -->
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type='text/javascript' src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const articleList = document.querySelectorAll('#article-list .work-item .work-name');
+      articleList.forEach((item, index) => {
+        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+      });
+
+      const presentationList = document.querySelectorAll('#presentation-list .work-item .work-name');
+      presentationList.forEach((item, index) => {
+        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+      });
+
+      const awardList = document.querySelectorAll('#award-list .work-item .work-name');
+      awardList.forEach((item, index) => {
+        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+      });
+
+      const writingList = document.querySelectorAll('#writing-list .work-item .work-name');
+      writingList.forEach((item, index) => {
+        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+      });
+
+      const scholarshipList = document.querySelectorAll('#scholarship-list .work-item .work-name');
+      scholarshipList.forEach((item, index) => {
+        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+      });
+    });
+  </script>
+
 </body>
+
 </html>

@@ -84,9 +84,10 @@ img {
 
 .header .language-switcher {
   position: absolute;
-  top: 20px;   /* ヘッダー内での縦位置 */
+  top: 50%;   /* ヘッダー内での縦位置 */
   right: 20px; /* ヘッダー内での横位置 */
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 18px;
   color: #fff;
 }
 

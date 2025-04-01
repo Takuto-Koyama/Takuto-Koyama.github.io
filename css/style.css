@@ -305,6 +305,7 @@ img {
 
 .profile-body {
   flex: 1;
+  margin-left: 20px;
 }
 
 .profile-body p {

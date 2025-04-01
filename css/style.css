@@ -284,13 +284,14 @@ img {
 .profile {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   max-width: 900px;
   margin: 0 auto;
 }
 
 .profile-img {
-  width: 150px;       /* 固定の幅を設定 */
-  height: 150px;      /* 固定の高さを設定（幅と同じ値で正方形に） */
+  width: 180px;       /* 固定の幅を設定 */
+  height: 180px;      /* 固定の高さを設定（幅と同じ値で正方形に） */
   border-radius: 50%;
   overflow: hidden;   /* はみ出した部分を非表示にする */
   display: block;     /* ブロックレベル要素として扱う */

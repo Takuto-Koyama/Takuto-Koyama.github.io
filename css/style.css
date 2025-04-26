@@ -290,8 +290,8 @@ img {
 }
 
 .profile-img {
-  width: 180px;       /* 固定の幅を設定 */
-  height: 180px;      /* 固定の高さを設定（幅と同じ値で正方形に） */
+  width: 160px;       /* 固定の幅を設定 */
+  height: 160px;      /* 固定の高さを設定（幅と同じ値で正方形に） */
   border-radius: 50%;
   overflow: hidden;   /* はみ出した部分を非表示にする */
   display: block;     /* ブロックレベル要素として扱う */

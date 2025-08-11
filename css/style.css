@@ -289,6 +289,10 @@ img {
   margin-bottom: 8px;
 }
 
+#intern-list:last-of-type {
+  margin-bottom: 40px;
+}
+
 /*--------------------------------
  Skill
 ---------------------------------*/

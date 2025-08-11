@@ -1,6 +1,6 @@
 body {
   font-family: "Inter", "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: .05em;
   color: #333;
 }
@@ -55,7 +55,7 @@ img {
  見出し
 ---------------------------------*/
 .title {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
@@ -252,7 +252,7 @@ img {
 
 .work-title {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 8px;
 }
 
@@ -261,7 +261,7 @@ img {
 }
 
 .work-authors {
-  font-size: 15px;
+  font-size: 16px;
   color: #666;
   margin-bottom: 0;
   margin-left: 10px;
@@ -275,7 +275,7 @@ img {
 
 .work-position {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 5px;
   color: #333;
 }
@@ -491,7 +491,7 @@ img {
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .pc-only {
@@ -504,7 +504,7 @@ img {
 
   /* 見出し */
   .title {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 20px;
   }
 

@@ -402,6 +402,11 @@
         item.innerHTML = `[${index + 1}] ` + item.innerHTML;
       });
 
+      const workExperienceList = document.querySelectorAll('#intern-list .work-position');
+      workExperienceList.forEach((item, index) => {
+        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+      });
+
       // Highlight "Takuto Koyama" in work-authors
       const authorElements = document.querySelectorAll('.work-authors');
       authorElements.forEach((element) => {

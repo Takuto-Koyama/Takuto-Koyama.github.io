@@ -252,7 +252,7 @@ img {
 
 .work-title {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 8px;
 }
 
@@ -261,7 +261,7 @@ img {
 }
 
 .work-authors {
-  font-size: 13px;
+  font-size: 15px;
   color: #666;
   margin-bottom: 0;
   margin-left: 10px;
@@ -275,6 +275,7 @@ img {
 
 .work-position {
   font-weight: bold;
+  font-size: 16px;
   margin-bottom: 5px;
   color: #333;
 }

@@ -256,6 +256,10 @@ img {
   margin-bottom: 8px;
 }
 
+.work-number {
+  font-weight: 400;
+}
+
 .work-authors {
   font-size: 13px;
   color: #666;

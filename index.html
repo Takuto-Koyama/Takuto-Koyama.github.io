@@ -379,7 +379,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       const articleList = document.querySelectorAll('#article-list .work-item .work-title');
       articleList.forEach((item, index) => {
-        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+        item.innerHTML = `<span class="work-number">[${index + 1}] </span>` + item.innerHTML;
       });
 
       const presentationList = document.querySelectorAll('#presentation-list .work-item .work-name');

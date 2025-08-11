@@ -377,7 +377,7 @@
   <script type='text/javascript' src="js/script.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const articleList = document.querySelectorAll('#article-list .work-item .work-name');
+      const articleList = document.querySelectorAll('#article-list .work-item .work-title');
       articleList.forEach((item, index) => {
         item.innerHTML = `[${index + 1}] ` + item.innerHTML;
       });

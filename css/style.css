@@ -583,16 +583,53 @@ img {
   }
 
   /* Works */
+  .works-type {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .works-list {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .work-item {
+    margin-bottom: 20px;
+  }
+
+  .work-title {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  .work-authors {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-left: 5px;
+  }
+
+  .work-position {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .work-period {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
   .works-name {
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .works-info {
     margin-top: 3px;
-  }
-
-  .works-list {
-    justify-content: space-between;
   }
 
   .works-item {
@@ -643,6 +680,17 @@ img {
 
   .profile-body p:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  .profile-body {
+    margin-left: 0;
+  }
+
+  /* Biography */
+  .biography-list {
+    font-size: 14px;
+    padding: 0 20px;
+    line-height: 1.8;
   }
 
   /* フッター */

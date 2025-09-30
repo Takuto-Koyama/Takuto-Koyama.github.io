@@ -529,34 +529,58 @@ img {
 
   /* ヘッダー */
   .header .container {
-    padding: 15px;
-  }
-
-  .header .language-switcher {
-    font-size: 12px;
-    margin-left: 10px;
-    gap: 6px;
-  }
-  
-  .header .language-switcher a {
-    padding: 2px 4px;
+    padding: 10px 15px;
+    flex-wrap: wrap;
   }
 
   .header-logo {
     font-size: 15px;
-    margin-right: 15px;
-  }
-
-  .gnav-item:not(:last-child) {
     margin-right: 10px;
   }
 
+  .header-img {
+    width: 200px;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    min-width: 0;
+  }
+
+  .gnav-list {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .gnav-item:not(:last-child) {
+    margin-right: 0;
+  }
+
   .gnav-item a {
-    font-size: 10px;
+    font-size: 9px;
+    padding: 3px 2px;
   }
 
   .gnav-item a:after {
     display: none;
+  }
+
+  .header .language-switcher {
+    font-size: 10px;
+    margin-left: 8px;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .header .language-switcher a {
+    padding: 3px 4px;
+    font-size: 10px;
+  }
+
+  .header .language-switcher .separator {
+    font-size: 10px;
   }
 
   /*  メインビジュアル */

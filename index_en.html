@@ -113,7 +113,7 @@
             <a class="work-item" href="https://chemrxiv.org/engage/chemrxiv/article-details/68cbfe759008f1a46762e3e8">
               <div class="work-name">
                 <p class="work-title">Empowering Federated Learning for Robust Compound-Protein Interaction Prediction across Heterogeneous Cross-Pharma Domains</p>
-                <p class="work-authors">Takuto Koyama, Hiroaki Iwata, Ryosuke Kojima, Takao Otsuka, Aki Hasegawa, Hiroshi Ueda, Toshiharu Morimoto, Ryoko Sasaki, Nao Torimoto, Sei Murakami, Manabu Tojo, Teruki Honma, Shigeyuki Matsumoto, and Yasushi Okuno. (2025). <i>ChemRxiv</i>. [PREPRINT]</p>
+                <p class="work-authors">Takuto Koyama, Hiroaki Iwata, Ryosuke Kojima, Takao Otsuka, Aki Hasegawa, Hiroshi Ueda, Toshiharu Morimoto, Ryoko Sasaki, Nao Torimoto, Sei Murakami, Manabu Tojo, Teruki Honma, Shigeyuki Matsumoto, and Yasushi Okuno. (2025). <i>J. Cheminform.</i>. [ACCEPTED]</p>
               </div>
             </a>
 
@@ -168,8 +168,32 @@
 
           </div>
 
+          <h3 class="works-type">CONFERENCE PAPER</h3>
+          <div class="works-list" id="conference-list">
+
+            <a class="work-item" href="https://ceur-ws.org/Vol-4085/paper55.pdf">
+              <div class="work-name">
+                <p class="work-title">Accelerating Drug Discovery through Semantic Data Integration and Machine Learning: From Biomedical Knowledge Graphs to Predictive Models</p>
+                <p class="work-authors">Toshiaki Katayama, Shuichi Kawashima, Yuki Moriya, Ryosuke Kojima, Takuto Koyama, Mayumi Kamada. (2025). <i>ISWC 2025</i>. [POSTER]</p>
+              </div>
+            </a>
+
+          </div>
+
           <h3 class="works-type">PRESENTATIONS</h3>
           <div class="works-list" id="presentation-list">
+
+            <a class="work-item" href="https://cbi-society.org/taikai/taikai25/index.html">
+              <p class="work-name">Takuto Koyama, Hiroaki Iwata, Ryosuke Kojima, Takao Otsuka, Aki Hasegawa, Teruki Honma, Shigeyuki Matsumoto, and Yasushi Okuno.
+                "Empowering Federated Learning for Robust Compound-Protein Interaction Prediction across Heterogeneous Cross-Pharma Domains", The 25th Annual Conference on Computational Biology and Informatics (CBI 2025), Tokyo, October 2025. [POSTER]
+              </p>
+            </a>
+
+            <a class="work-item" href="https://cbi-society.org/taikai/taikai25/index.html">
+              <p class="work-name">Seungeon Lee, Takuto Koyama, Itsuki Maeda, Shigeyuki Matsumoto, and Yasushi Okuno.
+                "HELM-BERT: A Transformer for Medium-sized Peptide Property Prediction", The 25th Annual Conference on Computational Biology and Informatics (CBI 2025), Tokyo, October 2025. [ORAL]
+              </p>
+            </a>
 
             <a class="work-item" href="https://pac-mice.jp/jmai2025/">
               <p class="work-name">Takuto Koyama, Hayato Tsumura, Ryunosuke Okita, Kimihiro Yamazaki, Keiko Imamura, Takashi Kato, Aki Hasegawa, Hiroaki Iwata, Ryosuke Kojima, Haruhisa Inoue, Shigeyuki Matsumoto, and Yasushi Okuno.
@@ -400,7 +424,12 @@
     document.addEventListener("DOMContentLoaded", function () {
       const articleList = document.querySelectorAll('#article-list .work-item .work-title');
       articleList.forEach((item, index) => {
-        item.innerHTML = `[${index + 1}] ` + item.innerHTML;
+        item.innerHTML = `<span class="work-number">[${index + 1}] </span>` + item.innerHTML;
+      });
+
+      const conferenceList = document.querySelectorAll('#conference-list .work-item .work-title');
+      conferenceList.forEach((item, index) => {
+        item.innerHTML = `<span class="work-number">[${index + 1}] </span>` + item.innerHTML;
       });
 
       const presentationList = document.querySelectorAll('#presentation-list .work-item .work-name');

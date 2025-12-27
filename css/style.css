@@ -529,29 +529,34 @@ img {
 
   /* ヘッダー */
   .header .container {
-    padding: 10px 15px;
-    flex-wrap: wrap;
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .header-logo {
     font-size: 15px;
-    margin-right: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   .header-img {
-    width: 170px;
+    width: 160px;
   }
 
   .nav-wrapper {
     display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    min-width: 0;
+    width: 100%;
+    justify-content: center;
+    order: 2;
   }
 
   .gnav-list {
-    flex-wrap: nowrap;
-    gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    justify-content: center;
   }
 
   .gnav-item {
@@ -563,8 +568,8 @@ img {
   }
 
   .gnav-item a {
-    font-size: 10px;
-    padding: 3px 4px;
+    font-size: 12px;
+    padding: 4px 8px;
     white-space: nowrap;
   }
 
@@ -573,19 +578,20 @@ img {
   }
 
   .header .language-switcher {
-    font-size: 10px;
-    margin-left: 8px;
-    gap: 4px;
+    font-size: 11px;
+    margin-left: 0;
+    gap: 6px;
     flex-shrink: 0;
+    order: 3;
   }
 
   .header .language-switcher a {
-    padding: 3px 4px;
-    font-size: 10px;
+    padding: 4px 6px;
+    font-size: 11px;
   }
 
   .header .language-switcher .separator {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   /*  メインビジュアル */

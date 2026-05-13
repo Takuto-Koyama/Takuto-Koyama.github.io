@@ -862,6 +862,7 @@ img {
     width: 105px;
     font-size: 12px;
     padding-right: 20px;
+    white-space: normal;
   }
 
   .timeline-content {
